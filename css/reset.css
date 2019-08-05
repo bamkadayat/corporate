@@ -1,0 +1,292 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color:#777;
+    height:2000px;
+}
+.loader-page {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(https://j2n9a3i8.stackpathcdn.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;
+}
+/* html {
+    scroll-behavior: smooth;
+  }  */
+h1{
+    font-size: 36px;
+    color:#555;
+    font-weight: bold;
+}
+h2{
+    font-size: 30px;
+    color:#555;
+    font-weight: bold;
+}
+h3{
+    font-size: 24px;
+    color:#333;
+    font-weight: bold;
+}
+.primary{
+    color:#e74c3c;
+}
+.primary-bg{
+    background-color:#e74c3c;
+}
+.secondary-dark-blue{
+    color:#34495e;
+}
+.secondary-dark-blue-bg{
+    background-color:#34495e;
+}
+.secondary-sky-blue{
+    color: #2d82d8;
+}
+.secondary-sky-blue-bg{
+    background-color: #2d82d8;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+}
+a:hover{
+    text-decoration:none;
+}
+.section-padding{
+    padding:56px 0;
+}
+.white{
+    color:#fff;
+}
+.portfolio .inner-content{
+    position:relative;
+    width:270px;
+}
+.portfolio .inner-content img{
+    width:100%;
+    height:100%;
+}
+.portfolio .inner-content .overlay-content{
+    position:absolute;
+    top:100%;
+    left:0;
+    text-align:center;
+    background-color:rgba(0, 0, 0, 0.8);
+    width:100%;
+    height:100%;
+    transition: .5s ease;
+   
+}
+.portfolio .inner-content .overlay-content h3{
+    padding-top:24%;
+    color: #E74C3C;
+}
+.portfolio .inner-content:hover .overlay-content{
+    top:0px;
+}
+/* Team */
+.team .inner-content{
+    position:relative;
+    width:270px;
+    height:270px;
+}
+.team .inner-content img{
+    width:100%;
+    height:100%;
+}
+.team .inner-content .overlay-content{
+    position:absolute;
+    top:100%;
+    left:0;
+    text-align:center;
+    background-color:rgba(0, 0, 0, 0.8);
+    width:100%;
+    height:100%;
+    transition: .5s ease;
+    padding: 25px;
+}
+.team .inner-content .overlay-content h3{
+    padding-top:0;
+    color: #E74C3C;
+}
+.team .inner-content .overlay-content h4{
+    font-size: 20px;
+    color: #2d82d8;
+}
+.team .inner-content .overlay-content p{
+    padding:5px;
+}
+.team .inner-content .overlay-content .social-links a{
+    padding:6px;
+}
+.team .inner-content .overlay-content .social-links .common-cls
+{
+    font-size:25px;
+    border-radius:100%;
+    width:40px;
+    height:40px;
+    color:#fff;
+    text-align:center;
+    padding:9px;
+}
+.team .inner-content .overlay-content .social-links .fb{
+    background:#1235f8;
+}
+.team .inner-content .overlay-content .social-links .fb:hover{
+    background:#021a9e;
+    transition:all 0.4s ease;
+    -webkit-transition:all 0.4s ease;
+    -moz-transition:all 0.4s ease;
+}
+.team .inner-content .overlay-content .social-links .tw{
+    background:#009cff;
+}
+.team .inner-content .overlay-content .social-links .tw:hover{
+    background:#05639e;
+    transition:all 0.4s ease;
+    -webkit-transition:all 0.4s ease;
+    -moz-transition:all 0.4s ease;
+}
+.team .inner-content .overlay-content .social-links .gg{
+    background:#ff4444;
+}
+.team .inner-content .overlay-content .social-links .gg:hover{
+    background:#720505;
+    transition:all 0.4s ease;
+    -webkit-transition:all 0.4s ease;
+    -moz-transition:all 0.4s ease;
+}
+.fb-hv:hover .fb{
+    background:#000 !important;
+}
+.team .inner-content:hover .overlay-content{
+    top:0px;
+}
+.contact .contact-form{
+    width: 50% !important;
+    margin: 0 auto;
+}
+.contact-form,input[type=text]{ 
+    width:100%;
+    padding:10px;
+    margin-bottom: 10px;
+    outline: none;
+
+}
+.contact-form, textarea{
+    padding:20px 10px;
+    width:100%;
+    margin-bottom: 10px;
+    outline:none;
+   
+}
+.contact-form input[type=submit]{
+    background:#E74C3C;
+    width:100px;
+    color:#fff;
+    padding:5px;
+    display: inherit;
+    margin:0 auto;
+    
+}
+.contact-form input[type=submit]:hover{
+    background:rgb(240, 35, 13);
+    border-radius: 5px;
+    transition:all 0.3s ease;
+}
+/* Page Loader */
+@keyframes lds-gear {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    50% {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes lds-gear {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    50% {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .lds-gear > div {
+    -webkit-transform-origin: 100px 100px;
+    transform-origin: 100px 100px;
+    -webkit-animation: lds-gear 1s infinite linear;
+    animation: lds-gear 1s infinite linear;
+    position: relative;
+  }
+  .lds-gear > div div {
+    position: absolute;
+    width: 26px;
+    height: 192px;
+    background: #f08d43;
+    left: 100px;
+    top: 100px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .lds-gear > div div:nth-child(1) {
+    width: 152px;
+    height: 152px;
+    border-radius: 50%;
+  }
+  .lds-gear > div div:nth-child(3) {
+    -webkit-transform: translate(-50%, -50%) rotate(30deg);
+    transform: translate(-50%, -50%) rotate(30deg);
+  }
+  .lds-gear > div div:nth-child(4) {
+    -webkit-transform: translate(-50%, -50%) rotate(60deg);
+    transform: translate(-50%, -50%) rotate(60deg);
+  }
+  .lds-gear > div div:nth-child(5) {
+    -webkit-transform: translate(-50%, -50%) rotate(90deg);
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  .lds-gear > div div:nth-child(6) {
+    -webkit-transform: translate(-50%, -50%) rotate(120deg);
+    transform: translate(-50%, -50%) rotate(120deg);
+  }
+  .lds-gear > div div:nth-child(7) {
+    -webkit-transform: translate(-50%, -50%) rotate(150deg);
+    transform: translate(-50%, -50%) rotate(150deg);
+  }
+  .lds-gear > div div:nth-child(8) {
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    border-radius: 50%;
+  }
+  .lds-gear {
+    width: 59px !important;
+    height: 59px !important;
+    -webkit-transform: translate(-29.5px, -29.5px) scale(0.295) translate(29.5px, 29.5px);
+    transform: translate(-29.5px, -29.5px) scale(0.295) translate(29.5px, 29.5px);
+  }
+  
